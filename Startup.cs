@@ -43,7 +43,6 @@ namespace DMM
             services.AddServerSideBlazor();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddDatabaseDeveloperPageExceptionFilter();
-            services.AddSingleton<WeatherForecastService>();
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<AuthMessageSenderOptions>(Configuration);
