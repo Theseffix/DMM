@@ -1,5 +1,6 @@
 using DMM.Areas.Identity;
 using DMM.Data;
+using DMM.Models.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -46,6 +47,23 @@ namespace DMM
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<AuthMessageSenderOptions>(Configuration);
+
+            services.AddScoped<ActionTemplate>();
+            services.AddScoped<Area>();
+            services.AddScoped<AttatchedFile>();
+            services.AddScoped<Campaign>();
+            services.AddScoped<Item>();
+            services.AddScoped<ItemFeatureTrait>();
+            services.AddScoped<Location>();
+            services.AddScoped<Loot>();
+            services.AddScoped<Map>();
+            services.AddScoped<Monster>();
+            services.AddScoped<MonsterAction>();
+            services.AddScoped<MonsterTemplate>();
+            services.AddScoped<Note>();
+            services.AddScoped<Player>();
+            services.AddScoped<Trait>();
+            services.AddScoped<TraitTemplate>();
 
         }
 

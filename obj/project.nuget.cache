@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FYSRUZagTxezv9P3XsZtFzpl649jAv/Bv4YmzC8/fanmXMQ0P6WhLmTxZl7rH9nP2B+SdHwvtLihBPp7voxXrQ==",
+  "dgSpecHash": "qv2WujXHXGm1bKSDF1ARZhNQB7pPXJKRfJp2XFHcKCVjpiOcZ5ZUqZfasyzMjMSeJjrtalT6HnrssCzAFYbGUw==",
   "success": true,
-  "projectFilePath": "D:\\repos\\DMM\\DMM.csproj",
+  "projectFilePath": "D:\\repos\\dmm\\DMM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\denni\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\denni\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\DMM\\DMM.csproj": {}
+    "D:\\repos\\dmm\\DMM.csproj": {}
   },
   "projects": {
-    "D:\\repos\\DMM\\DMM.csproj": {
+    "D:\\repos\\dmm\\DMM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\DMM\\DMM.csproj",
+        "projectUniqueName": "D:\\repos\\dmm\\DMM.csproj",
         "projectName": "DMM",
-        "projectPath": "D:\\repos\\DMM\\DMM.csproj",
+        "projectPath": "D:\\repos\\dmm\\DMM.csproj",
         "packagesPath": "C:\\Users\\denni\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\DMM\\obj\\",
+        "outputPath": "D:\\repos\\dmm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
