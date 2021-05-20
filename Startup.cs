@@ -1,6 +1,7 @@
 using DMM.Areas.Identity;
 using DMM.Data;
 using DMM.Models.Entities;
+using DMM.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -46,6 +47,8 @@ namespace DMM
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<AuthMessageSenderOptions>(Configuration);
+
+            services.AddScoped<CampaignService>();
 
             services.AddScoped<ActionTemplate>();
             services.AddScoped<Area>();

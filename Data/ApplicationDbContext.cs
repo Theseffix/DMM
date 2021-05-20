@@ -13,6 +13,11 @@ namespace DMM.Data
             : base(options)
         {
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Campaign>();
+            base.OnModelCreating(modelBuilder);
+        }
 
         public DbSet<ActionTemplate> ActionTemplates { get; set; }
         public DbSet<Area> Areas { get; set; }

@@ -1,17 +1,22 @@
 ﻿@using Blazority
 
 <AuthorizeView>
-    <Authorized>
-        <div class="dropdown">
-            <button class="dropbtn">Collections</button>
-            <div class="dropdown-content">
-                <a href="/Monster">Monster</a>
-                <a href="/Privacy">Privacy</a>
-                <a href="/Campaigns">Campaigns</a>
+        <Authorized>
+            <div class="dropdown">
+                <button class="dropbtn">Collections</button>
+                <div class="dropdown-content">
+                    <a href="/mycampaigns">My Campaigns</a>
+                    <a href="/mymonster">My Monsters</a>
+                </div>
             </div>
-        </div>
-    </Authorized>
-    <NotAuthorized>
-        
-    </NotAuthorized>
+        </Authorized>
+        <NotAuthorized>
+            <div class="dropdown">
+                <button class="dropbtn">Collections</button>
+                <div class="dropdown-content">
+                    <a href="/mycampaigns">My Campaigns</a>
+                    <a href="/mymonster">My Monsters</a>
+                </div>
+            </div>
+        </NotAuthorized>
 </AuthorizeView>

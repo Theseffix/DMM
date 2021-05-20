@@ -1,0 +1,12 @@
+﻿@page "/mycampaigns/createcampaign"
+@using Blazority
+
+<br />
+
+<Form Model="@textAreaModel">
+<Textarea Label="Campaign Title" @bind-Value="textAreaModel.InputName" style="resize:none;" />
+<br />
+<Textarea Label="Campaign Description" @bind-Value="textAreaModel.InputDescription" style="resize:none;" />
+</Form>
+<br />
+
