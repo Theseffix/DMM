@@ -18,16 +18,14 @@ namespace DMM.Services
         {
             this.dbContextFactory = dbContextFactory;
         }
-
-        public async Task<List<Campaign>> GetItems()
+        public async Task<List<Campaign>> GetAllCampaigns()
         {
             await using var context = dbContextFactory.CreateDbContext();
-            var AllItems = await context.Campaigns.ToListAsync();
+            var AllCampaigns = await context.Campaigns.ToListAsync();
 
-            return AllItems.ToList();
+            return AllCampaigns.ToList();
         }
-
-        public async Task UpdateItems(Campaign p)
+        public async Task UpdateMyCampaign(Campaign p)
         {
             await using var context = dbContextFactory.CreateDbContext();
             var q1 = context.Campaigns.SingleOrDefault(x => x.Id == p.Id);
@@ -36,14 +34,14 @@ namespace DMM.Services
             context.Update(q1);
             context.SaveChanges();
         }
-        public async Task DeleteItems(Campaign p)
+        public async Task DeleteMyCampaign(Campaign p)
         {
             await using var context = dbContextFactory.CreateDbContext();
             var q1 = context.Campaigns.SingleOrDefault(x => x.Id == p.Id);
             context.Remove(q1);
             context.SaveChanges();
         }
-        public async Task InsertItems(Campaign p)
+        public async Task InsertMyCampaign(Campaign p)
         {
             await using var context = dbContextFactory.CreateDbContext();
             context.Add(p);

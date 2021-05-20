@@ -39,7 +39,12 @@ namespace DMM.Pages.CampaignPages
             c.Name = textAreaModel.InputName;
             c.Description = textAreaModel.InputDescription;
 
-            await CampaignService.Insert(c);
+            await CampaignService.InsertMyCampaign(c);
+            NavigationManager.NavigateTo("/mycampaigns");
+        }
+        public void NavigateToMyCampaigns()
+        {
+            NavigationManager.NavigateTo("/mycampaigns");
         }
     }
 }

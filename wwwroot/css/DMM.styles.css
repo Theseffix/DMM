@@ -1,6 +1,28 @@
 ﻿body {
 }
 
+.CampaignDivSize {
+    background-color: lightgray;
+    border-radius: 10px;
+    height: 200px;
+    width: 250px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.CampaignDivSize.hoverOutline:hover {
+    box-shadow: 0 0 3pt 2pt darkgray;
+}
+
+.imageSize {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    display: block;
+    width: 40%;
+}
+
 .dropbtn {
     background-color: #3B3432;
     color: white;

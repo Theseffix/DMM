@@ -9,6 +9,7 @@ using DMM.Services;
 using Blazority;
 using System.Runtime.InteropServices;
 using Microsoft.AspNetCore.Components.Authorization;
+using DMM.Models.Entities;
 
 namespace DMM.Pages.CampaignPages
 {
@@ -19,19 +20,23 @@ namespace DMM.Pages.CampaignPages
         AuthenticationStateProvider AuthenticationStateProvider { get; set; }
         [Inject]
         NavigationManager NavigationManager { get; set; }
+        [Inject]
+        CampaignService CampaignService { get; set; }
 
-        #region urls
-        public string url1 = "/mycampaigns/createcampaign";
-        #endregion
+        //Variables
+        List<Campaign> AllCampaigns { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
             await SharedMethods.CheckIfLoggedIn(AuthenticationStateProvider, NavigationManager);
+
+            AllCampaigns = new();
+            AllCampaigns = await CampaignService.GetAllCampaigns();
         }
 
-        public void NavigateToSite(string url)
+        public void NavigateToCreateCampaign()
         {
-            NavigationManager.NavigateTo(url);
+            NavigationManager.NavigateTo("/mycampaigns/createcampaign");
         }
 
     }
