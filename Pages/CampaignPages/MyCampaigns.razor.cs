@@ -10,11 +10,13 @@ using Blazority;
 using System.Runtime.InteropServices;
 using Microsoft.AspNetCore.Components.Authorization;
 using DMM.Models.Entities;
+using System.Security.Claims;
 
 namespace DMM.Pages.CampaignPages
 {
     public partial class MyCampaigns : ComponentBase
     {
+
         SharedMethods SharedMethods = new();
         [Inject]
         AuthenticationStateProvider AuthenticationStateProvider { get; set; }
@@ -29,7 +31,6 @@ namespace DMM.Pages.CampaignPages
         protected override async Task OnInitializedAsync()
         {
             await SharedMethods.CheckIfLoggedIn(AuthenticationStateProvider, NavigationManager);
-
             AllCampaigns = new();
             AllCampaigns = await CampaignService.GetAllCampaigns();
         }

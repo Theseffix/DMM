@@ -10,7 +10,17 @@ namespace DMM.Services
 {
     public class SharedMethods
     {
-        
+        public string ConvertImageToDisplay(byte[] Image)
+        {
+            if(Image != null)
+            {
+                var base64 = Convert.ToBase64String(Image);
+                var fs = string.Format("data:image/jpg;base64,{0}", base64);
+                return fs;
+            }
+
+            return "";
+        }
         public async Task CheckIfLoggedIn(AuthenticationStateProvider AuthenticationStateProvider, NavigationManager NavigationManager)
         {
             var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();

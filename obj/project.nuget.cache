@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "L4ZgBs8hjO/pA9uaOe6UbZi47ELNlZFXoMw9xYmPC74q8qtuvU3ZGtxeVgaZWPXHLvRRgiz+NsLs8b4bWtdb9w==",
+  "dgSpecHash": "c0CzvP3pNwIoiZyYkJY7lM2r59o9n2cdblQMPayFOYqCexUzqoPMp8CUj0OHMj1Ghj1QXJmT/mCNIlzCQOD/0g==",
   "success": true,
   "projectFilePath": "D:\\repos\\dmm\\DMM.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\denni\\.nuget\\packages\\agno.blazorinputfile\\0.3.0\\agno.blazorinputfile.0.3.0.nupkg.sha512",
+    "C:\\Users\\denni\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
     "C:\\Users\\denni\\.nuget\\packages\\blazority\\0.7.4\\blazority.0.7.4.nupkg.sha512",
     "C:\\Users\\denni\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\denni\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.3\\microsoft.aspnetcore.authorization.5.0.3.nupkg.sha512",

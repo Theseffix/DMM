@@ -82,6 +82,20 @@ using DMM.Pages.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\repos\dmm\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 1 "D:\repos\dmm\App.razor"
+using DMM.Services.Shared;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

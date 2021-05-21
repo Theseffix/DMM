@@ -20,6 +20,8 @@
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\5.0.6\build\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\5.0.6\build\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\5.0.6\buildTransitive\Microsoft.AspNetCore.Identity.UI.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\5.0.6\buildTransitive\Microsoft.AspNetCore.Identity.UI.props')" />
     <Import Project="$(NuGetPackageRoot)blazority\0.7.4\buildTransitive\Blazority.props" Condition="Exists('$(NuGetPackageRoot)blazority\0.7.4\buildTransitive\Blazority.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorinputfile\0.2.0\buildTransitive\BlazorInputFile.props" Condition="Exists('$(NuGetPackageRoot)blazorinputfile\0.2.0\buildTransitive\BlazorInputFile.props')" />
+    <Import Project="$(NuGetPackageRoot)agno.blazorinputfile\0.3.0\buildTransitive\Agno.BlazorInputFile.props" Condition="Exists('$(NuGetPackageRoot)agno.blazorinputfile\0.3.0\buildTransitive\Agno.BlazorInputFile.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\denni\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>

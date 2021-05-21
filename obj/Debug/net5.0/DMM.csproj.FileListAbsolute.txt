@@ -216,3 +216,5 @@ D:\repos\dmm\obj\Debug\net5.0\Razor\Pages\CampaignPages\Campaigns.cshtml.g.cs
 D:\repos\dmm\obj\Debug\net5.0\RazorDeclaration\Pages\CampaignPages\CreateCampaign.razor.g.cs
 D:\repos\dmm\obj\Debug\net5.0\Razor\Pages\CampaignPages\CreateCampaign.razor.g.cs
 D:\repos\dmm\obj\Debug\net5.0\DMM.csprojAssemblyReference.cache
+D:\repos\dmm\bin\Debug\net5.0\BlazorInputFile.dll
+D:\repos\dmm\bin\Debug\net5.0\Agno.BlazorInputFile.dll

@@ -82,6 +82,13 @@ using DMM.Pages.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\repos\dmm\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

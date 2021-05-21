@@ -1,4 +1,5 @@
-﻿using DMM.Models.Entities;
+﻿using DMM.Areas.Identity;
+using DMM.Models.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace DMM.Data
 {
-    public class ApplicationDbContext : IdentityDbContext, IApplicationDbContext
+    public class ApplicationDbContext : IdentityDbContext<User>, IApplicationDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

@@ -13,7 +13,15 @@
         {
             <div class="CampaignDivSize hoverOutline" style="text-align:center;">
                 <div>
-                    <img class="imageSize" src="/images/d20Red.webp" alt="d20Red" asp-append-version="true" />
+                    @if (c.Image == null)
+                    {
+                        <img class="imageSize" src="/images/d20Red.webp" alt="d20Red" asp-append-version="true" />
+                    }
+                    else
+                    {
+                        string img = SharedMethods.ConvertImageToDisplay(c.Image);
+                        <img class="imageSize" src="@img" alt="d20Red" asp-append-version="true" />
+                    }
                 </div>
                 <div style="margin-top:6px;">
                     <b style="color:black;">@c.Name</b>

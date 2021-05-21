@@ -73,6 +73,13 @@ using DMM.Pages.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "D:\repos\dmm\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "D:\repos\dmm\Pages\Index.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 

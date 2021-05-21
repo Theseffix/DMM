@@ -33,10 +33,13 @@
     ".NETCoreApp,Version=v5.0": {
       "DMM/1.0.0": {
         "dependencies": {
+          "Agno.BlazorInputFile": "0.3.0",
+          "BlazorInputFile": "0.2.0",
           "Blazority": "0.7.4",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.6",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.6",
           "Microsoft.AspNetCore.Identity.UI": "5.0.6",
+          "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.6",
           "Microsoft.Extensions.Configuration": "5.0.0",
@@ -318,6 +321,36 @@
         },
         "compile": {
           "DMM.dll": {}
+        }
+      },
+      "Agno.BlazorInputFile/0.3.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.3",
+          "Microsoft.AspNetCore.Components.Web": "5.0.3"
+        },
+        "runtime": {
+          "lib/net5.0/Agno.BlazorInputFile.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Agno.BlazorInputFile.dll": {}
+        }
+      },
+      "BlazorInputFile/0.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.3",
+          "Microsoft.AspNetCore.Components.Web": "5.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.1/BlazorInputFile.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/BlazorInputFile.dll": {}
         }
       },
       "Blazority/0.7.4": {
@@ -3231,6 +3264,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Agno.BlazorInputFile/0.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jQyqbUfcYjdkS67xRGijOm6ZDD/K1ijM0WnftJGp+0aTZYBkIzQq3mghvv+Eucq7VcDmO70BFHSEAo+/ZvE5sQ==",
+      "path": "agno.blazorinputfile/0.3.0",
+      "hashPath": "agno.blazorinputfile.0.3.0.nupkg.sha512"
+    },
+    "BlazorInputFile/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wsPTwoA9fkHOxjEh0W0brNeTaVBaMCFwfBLehbRhfW+RzlIrYtlJ5qFpT5f377Ej6ELk+xeoUrkDBx9c8JF7DQ==",
+      "path": "blazorinputfile/0.2.0",
+      "hashPath": "blazorinputfile.0.2.0.nupkg.sha512"
     },
     "Blazority/0.7.4": {
       "type": "package",

@@ -7,6 +7,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Blazority;
+using System.IO;
+using Microsoft.AspNetCore.Components.Forms;
+using BlazorInputFile;
 
 namespace DMM.Pages.CampaignPages
 {
@@ -23,6 +27,9 @@ namespace DMM.Pages.CampaignPages
         //Model for TextAreas
         private TextAreaModel textAreaModel = new TextAreaModel();
 
+        //Variables for File handling
+        IFileListEntry file;
+
         protected override async Task OnInitializedAsync()
         {
             await SharedMethods.CheckIfLoggedIn(AuthenticationStateProvider, NavigationManager);
@@ -32,12 +39,17 @@ namespace DMM.Pages.CampaignPages
         {
             public string InputName { get; set; }
             public string InputDescription { get; set; }
+            public byte[] ImgUpload { get; set; }
         }
         public async Task SubmitCampaign()
         {
             Campaign c = new();
             c.Name = textAreaModel.InputName;
             c.Description = textAreaModel.InputDescription;
+            if (textAreaModel.ImgUpload != null)
+            {
+                c.Image = textAreaModel.ImgUpload;
+            }
 
             await CampaignService.InsertMyCampaign(c);
             NavigationManager.NavigateTo("/mycampaigns");
@@ -45,6 +57,16 @@ namespace DMM.Pages.CampaignPages
         public void NavigateToMyCampaigns()
         {
             NavigationManager.NavigateTo("/mycampaigns");
+        }
+        public async Task HandleFileSelected(IFileListEntry[] files)
+        {
+            file = files.FirstOrDefault();
+            if (files != null)
+            {
+                var ms = new MemoryStream();
+                await file.Data.CopyToAsync(ms);
+                textAreaModel.ImgUpload = ms.ToArray();
+            }
         }
     }
 }
